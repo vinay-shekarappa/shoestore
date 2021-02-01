@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/email_label"
+            style="@style/loginLabelStyle"
+            android:layout_marginTop="100dp"
+            android:text="@string/email"
+            app:layout_constraintBottom_toBottomOf="@+id/email_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/passwd_label"
+            style="@style/loginLabelStyle"
+            android:text="@string/password"
+            app:layout_constraintBottom_toBottomOf="@+id/password_txt"
+            app:layout_constraintEnd_toEndOf="@+id/email_label" />
+
+        <EditText
+            android:id="@+id/email_txt"
+            android:layout_width="211dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:autofillHints=""
+            android:hint="@string/email_text"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/password_txt"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="@+id/password_txt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/password_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/password_text"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/passwd_label"
+            app:layout_constraintTop_toBottomOf="@+id/email_txt"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="124dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/create_new"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwd_label" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="140dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_create"
+            app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
