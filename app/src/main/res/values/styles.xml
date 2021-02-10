@@ -33,4 +33,28 @@
         <item name="android:textSize">24sp</item>
     </style>
 
+    <style name="NameStyle">
+        <item name="android:layout_marginTop">@dimen/layout_margin</item>
+        <item name="android:padding">@dimen/small_padding</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="detailLabelStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="detailEditStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
 </resources>
