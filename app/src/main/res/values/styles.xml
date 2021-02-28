@@ -40,21 +40,34 @@
         <item name="android:textSize">@dimen/text_size</item>
     </style>
 
-    <style name="detailLabelStyle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_margin">20dp</item>
-        <item name="android:layout_marginTop">40dp</item>
+    <style name="detailTextStyle">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/design_default_color_on_primary</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
     </style>
 
     <style name="detailEditStyle">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_margin">20dp</item>
-        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
         <item name="android:ems">10</item>
         <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="detailButtonStyle">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
     </style>
 
 </resources>
